@@ -1,0 +1,103 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "public reader",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "OpenBookIntent",
+                    "slots": [
+                        {
+                            "name": "title",
+                            "type": "AMAZON.Book"
+                        },
+                        {
+                            "name": "author",
+                            "type": "AMAZON.Author"
+                        }
+                    ],
+                    "samples": [
+                        "Open {title} by {author}",
+                        "Read {title} by {author}",
+                        "{title} by {author}",
+                        "Read {title}",
+                        "Open {title}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "yes"
+                    ]
+                },
+                {
+                    "name": "ReadChapterIntent",
+                    "slots": [
+                        {
+                            "name": "chapter",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "part",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "chapter {chapter}",
+                        "chapter {chapter} part {part}",
+                        "Open chapter {chapter} part {part}",
+                        "Open part {part} chapter {chapter}",
+                        "Open chapter {chapter}",
+                        "Read part {part} chapter {chapter}",
+                        "Read chapter {chapter}",
+                        "Read chapter {chapter} part {part}"
+                    ]
+                },
+                {
+                    "name": "StartBookIntent",
+                    "slots": [],
+                    "samples": [
+                        "The beginning",
+                        "The start",
+                        "From the start",
+                        "From the beginning",
+                        "Open the start",
+                        "Read from the start",
+                        "Start",
+                        "Beginning",
+                        "Open the beginning",
+                        "Read from the beginning"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
