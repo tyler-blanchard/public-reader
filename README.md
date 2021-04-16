@@ -1,7 +1,7 @@
 # public reader
  Source code for the alexa application Public Reader
 
-This Alexa reads books in the public domain to its users. Users are able to say things like:
+This Alexa app reads books in the public domain to its users. Users are able to use commands such as:
 
     "Alexa, read Crime and Punishment."
     "Alexa, read chapter 1."
